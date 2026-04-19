@@ -18,6 +18,9 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+      
+      - name: Run DskipTests
+        run: mvn test
 
       - name: Build with Maven
         run: mvn clean package -DskipTests
