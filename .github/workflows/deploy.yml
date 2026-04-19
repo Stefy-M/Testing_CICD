@@ -19,7 +19,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       
-      - name: Run DskipTests
+      - name: Run Tests
         run: mvn test
 
       - name: Build with Maven
